@@ -1,3 +1,33 @@
 body {
 	background: #f8f8f8;
+	margin: 0;
+	padding: 0;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 1px solid black;
+	background: #dfdfdf;
+	text-align: center;
+}
+nav ul li {
+	display: inline-block;
+	margin-right: -5px;
+	width: 33%;
+}
+nav li a {
+	display: block;
+	padding: 25px 10px;
+	text-decoration: none;
+	border-left: 1px solid black;
+	margin-left: -1px;
+	font: 1.2em bold;
+	color: black;
+}
+nav li a:first-child {
+	margin-left: -13px;
+}
+nav li a:active {
+	color: white;
 }
