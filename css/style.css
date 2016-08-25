@@ -1,7 +1,8 @@
 body {
 	background: #f8f8f8;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
+	width: 1000px;
 }
 nav ul {
 	margin: 0;
@@ -25,9 +26,30 @@ nav li a {
 	font: 1.2em bold;
 	color: black;
 }
-nav li a:first-child {
-	margin-left: -13px;
+nav li:first-child a {
+	border-left: none;
 }
 nav li a:active {
 	color: white;
+}
+h2, h3 {
+	color: black;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: #eaeaea;
+	padding-left: 20px;
+}
+h1 {
+	text-align: center;
+}
+img, p {
+	padding-left: 20px;
+}
+footer {
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	vertical-align: middle;
+	background: #dfdfdf;
+	margin-top: 20px;
 }
