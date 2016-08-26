@@ -1,15 +1,17 @@
 body {
 	background: #f8f8f8;
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
+}
+nav + div {
 	width: 1000px;
+	margin: 0 auto;
 }
 nav ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	border: 1px solid black;
-	background: #dfdfdf;
+	background: #87cefa;
 	text-align: center;
 }
 nav ul li {
@@ -21,16 +23,16 @@ nav li a {
 	display: block;
 	padding: 25px 10px;
 	text-decoration: none;
-	border-left: 1px solid black;
+	border-left: 1px solid #4169e1;
 	margin-left: -1px;
 	font: 1.2em bold;
-	color: black;
+	color: #4169e1;
 }
 nav li:first-child a {
 	border-left: none;
 }
 nav li a:active {
-	color: white;
+	color: orange;
 }
 h2, h3 {
 	color: black;
@@ -50,6 +52,43 @@ footer {
 	line-height: 50px;
 	text-align: center;
 	vertical-align: middle;
-	background: #dfdfdf;
+	background: #4169e1;
 	margin-top: 20px;
+	color: yellow;
+}
+.goods {
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #87cefa;
+	border-radius: 20px;
+}
+.goods ul {
+	list-style: none;
+	display: block;
+	margin: 10px 180px;
+	padding:0;
+}
+.goods ul li {
+	display: inline-block;
+	width: 35%;
+	margin-bottom: 15px;
+}
+.goods li:nth-child(odd){
+	margin-right: 120px;
+}
+.goods li:nth-child(even){
+	margin-left: 60px;
+}
+header {
+	background: #4169e1;
+	border-radius: 20px;
+	padding: 15px;
+	margin-top: 5px;
+	margin-bottom: 50px;
+}
+header> h1 {
+	color: yellow;
+}
+li> p {
+	color: #4169e1;
 }
