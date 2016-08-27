@@ -1,18 +1,19 @@
-body {
-	background: #f8f8f8;
+body, nav ul {
 	margin: 0;
 	padding: 0;
 }
-nav + div {
+body, .catalog {
+	background: #f8f8f8;
+}
+nav + div, .goods {
 	width: 1000px;
 	margin: 0 auto;
 }
 nav ul {
-	margin: 0;
-	padding: 0;
 	list-style: none;
+}
+nav ul, .goods {
 	background: #87cefa;
-	text-align: center;
 }
 nav ul li {
 	display: inline-block;
@@ -25,8 +26,6 @@ nav li a {
 	text-decoration: none;
 	border-left: 1px solid #4169e1;
 	margin-left: -1px;
-	font: 1.2em bold;
-	color: #4169e1;
 }
 nav li:first-child a {
 	border-left: none;
@@ -39,12 +38,11 @@ h2, h3 {
 	font-size: 18px;
 	font-weight: 400;
 	background-color: #eaeaea;
-	padding-left: 20px;
 }
-h1, td {
+h1, nav ul, footer, .catalog, .contact, td {
 	text-align: center;
 }
- p {
+h2, h3, p {
 	padding-left: 20px;
 }
 img {
@@ -53,17 +51,14 @@ img {
 footer {
 	height: 50px;
 	line-height: 50px;
-	text-align: center;
 	vertical-align: middle;
-	background: #4169e1;
 	margin-top: 20px;
-	color: yellow;
 	padding: 10px;
 }
-.goods {
-	width: 1000px;
-	margin: 0 auto;
-	background-color: #87cefa;
+footer, header {
+	background: #4169e1;
+}
+.goods, header, fieldset, input {
 	border-radius: 20px;
 }
 .goods ul {
@@ -84,17 +79,12 @@ footer {
 	margin-left: 60px;
 }
 header {
-	background: #4169e1;
-	border-radius: 20px;
 	padding: 15px;
 	margin-top: 5px;
 	margin-bottom: 50px;
 }
-header> h1 {
+header> h1, footer {
 	color: yellow;
-}
-li> p {
-	color: #4169e1;
 }
 .additional + p {
 	color: #707070;
@@ -123,9 +113,6 @@ h2 + a>img{
 .catalog {
 	font-family: "Arial";
 	font-size: 1.7em;
-	background: #f8f8f8;
-	text-align: center;
-	color: #4169e1;
 }
 .pencil {
 	margin-left: 0;
@@ -133,10 +120,10 @@ h2 + a>img{
 .pencil ~ a {
 	padding-left: 0px;
 }
-section h1, legend, input {
+section h1, legend, input, li> p, .catalog, nav li a, .contact {
 	color: #4169e1;
 }
-hr + p{
+hr + p, nav li a{
 	font-size: 1.2em; 
 	font-weight: bold;
 }
@@ -144,8 +131,6 @@ hr + p{
 	font-family: "Arial";
 	font-size: 1.7em; 
 	font-weight: bold;
-	text-align: center;
-	color: #4169e1;
 }
 .field {
 	clear: both;
@@ -153,10 +138,9 @@ hr + p{
 	line-height: 35px;
 }
 label {
-	float: left;
 	padding-right: 10px;
 }
-.main-field {
+.main-field, label {
 	float: left;
 }
 textarea {
@@ -164,11 +148,11 @@ textarea {
 }
 fieldset {
 	border: 2px solid #4169e1;
-	border-radius: 20px;
 }
 input {
 	width: 250px;
 	font-size: 16px;
+	height: 20px;
 }
 table {
 	border-collapse: collapse;
@@ -186,4 +170,14 @@ h2 + a>img:hover {
 .goods p:first-letter {
 	font-family: Verdana;
 	font-size: 26px;
+}
+nav li:hover a {
+	color: red;
+}
+header>h1::before {
+	content: url(../img/logo/logo1.png);
+	margin-right: 1180px;
+}
+input[type="submit"] {
+	height: 30px;
 }
