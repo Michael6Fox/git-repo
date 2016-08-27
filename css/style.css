@@ -133,7 +133,7 @@ h2 + a>img{
 .pencil ~ a {
 	padding-left: 0px;
 }
-section h1 {
+section h1, legend {
 	color: #4169e1;
 }
 hr + p{
@@ -146,4 +146,23 @@ hr + p{
 	font-weight: bold;
 	text-align: center;
 	color: #4169e1;
+}
+.field {
+	clear: both;
+	text-align: right;
+	line-height: 25px;
+}
+label {
+	float: left;
+	padding-right: 10px;
+}
+.main-field {
+	float: left;
+}
+textarea {
+	margin-top: 10px;
+}
+fieldset {
+	border: 2px solid #4169e1;
+	border-radius: 20px;
 }

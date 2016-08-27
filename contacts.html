@@ -14,28 +14,38 @@
 		</ul>
 	</nav>
 	<div>
-	<header><h1>Интернет-магазин канцтоваров &laquo;Фломастер&raquo;</h1>
-	</header>
-	<section>
-			<p class=contact>Контактная информация</p>
-			<h2>Напишите нам</h2>
-			<form name="message" method="post">
+<header><h1>Интернет-магазин канцтоваров &laquo;Фломастер&raquo;</h1>
+</header>
+<section>
+	<p class=contact>Контактная информация</p>
+	<h2>Напишите нам</h2>
+	<form name="message" method="post">
 		<fieldset>
 			<legend>Отправить сообщение</legend>
-			<label>
-				<p>Ваше имя <input type="text" name="name"></p>
-			</label>
-			<label>
-				<p>E-mail <input type="email" name="mail"></p>
-			</label>
-			<label>
-				<p>Тема <input type="text" name="theme"></p>
-			</label>
-			<label>
-				<p>Номер телефона <input type="tel" name="telephone" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8-XXX-XXX-XX-XX"></p>
-			</label>
-				<p><textarea cols="30" rows="10">Напишите Ваш вопрос</textarea></p>
-				<p><input type="submit" value="Отправить"></p>
+			<div class="main-field">
+			<div class="field">
+				<label for="name">Ваше имя</label>
+				 <input type="text" name="name" id="name">
+			</div>
+			<div class="field">
+				<label for="email">E-mail</label>
+				<input type="email" name="mail" id="email">
+			</div>
+			<div class="field">
+				<label for="theme">Тема</label>
+				<input type="text" name="theme" id="theme">
+			</div>
+			<div class="field">
+				<label for="tel">Номер телефона</label>
+				 <input type="tel" name="telephone" id="tel" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8-XXX-XXX-XX-XX">
+			</div>
+			<div>
+			<textarea cols="30" rows="10">Напишите Ваш вопрос</textarea>
+			</div>
+			<div>
+			<input type="submit" value="Отправить">
+			</div>
+			</div>
 		</fieldset>
 	</form>
 	<h2>Наш адрес:</h2>
