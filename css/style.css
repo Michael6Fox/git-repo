@@ -44,8 +44,11 @@ h2, h3 {
 h1 {
 	text-align: center;
 }
-img, p {
+ p {
 	padding-left: 20px;
+}
+img {
+	margin-left: 20px;
 }
 footer {
 	height: 50px;
@@ -55,6 +58,7 @@ footer {
 	background: #4169e1;
 	margin-top: 20px;
 	color: yellow;
+	padding: 10px;
 }
 .goods {
 	width: 1000px;
@@ -110,6 +114,44 @@ h3 + ul li {
 	font-size: 16px;
 	padding: 5px;
 }
-ul {
-	list-style-image: url("img/marker.gif");
+ h3 + ul {
+	list-style-image: url(../img/bullet_yellow.png);
+}
+img[src^="../"]{
+	border:  2px solid #4169e1;
+}
+.catalog {
+	font-family: "Arial";
+	font-size: 1.7em;
+	background: #f8f8f8;
+	text-align: center;
+	color: #4169e1;
+}
+br+ a {
+	padding-left: 20px;
+	font-size: 16px;
+	color: #4169e1;
+}
+br+ a:active {
+	color: black;
+}
+.pencil {
+	margin-left: 0;
+}
+.pencil ~ a {
+	padding-left: 0px;
+}
+section h1 {
+	color: #4169e1;
+}
+hr + p{
+	font-size: 1.2em; 
+	font-weight: bold;
+}
+.contact {
+	font-family: "Arial";
+	font-size: 1.7em; 
+	font-weight: bold;
+	text-align: center;
+	color: #4169e1;
 }
