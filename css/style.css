@@ -117,7 +117,7 @@ h3 + ul li {
  h3 + ul {
 	list-style-image: url(../img/bullet_yellow.png);
 }
-img[src^="../"]{
+h2 + a>img{
 	border:  2px solid #4169e1;
 }
 .catalog {
@@ -126,14 +126,6 @@ img[src^="../"]{
 	background: #f8f8f8;
 	text-align: center;
 	color: #4169e1;
-}
-br+ a {
-	padding-left: 20px;
-	font-size: 16px;
-	color: #4169e1;
-}
-br+ a:active {
-	color: black;
 }
 .pencil {
 	margin-left: 0;
