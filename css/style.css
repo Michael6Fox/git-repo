@@ -133,7 +133,7 @@ h2 + a>img{
 .pencil ~ a {
 	padding-left: 0px;
 }
-section h1, legend {
+section h1, legend, input {
 	color: #4169e1;
 }
 hr + p{
@@ -150,7 +150,7 @@ hr + p{
 .field {
 	clear: both;
 	text-align: right;
-	line-height: 25px;
+	line-height: 35px;
 }
 label {
 	float: left;
@@ -165,4 +165,8 @@ textarea {
 fieldset {
 	border: 2px solid #4169e1;
 	border-radius: 20px;
+}
+input {
+	width: 250px;
+	font-size: 16px;
 }
