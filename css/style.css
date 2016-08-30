@@ -27,6 +27,9 @@ nav li a {
 	border-left: 1px solid #4169e1;
 	margin-left: -1px;
 }
+nav li:hover a {
+	color: red;
+}
 nav li:first-child a {
 	border-left: none;
 }
@@ -177,6 +180,10 @@ nav li:hover a {
 header>h1::before {
 	content: url(../img/logo/logo1.png);
 	margin-right: 1180px;
+}
+input[type="email"]:focus {
+	color: black;
+	background: #eaeaea;
 }
 input[type="submit"] {
 	height: 30px;
