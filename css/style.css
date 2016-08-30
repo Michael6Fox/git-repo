@@ -41,7 +41,7 @@ h2, h3 {
 	background-color: #eaeaea;
 	padding-left: 20px;
 }
-h1 {
+h1, td {
 	text-align: center;
 }
  p {
@@ -169,4 +169,21 @@ fieldset {
 input {
 	width: 250px;
 	font-size: 16px;
+}
+table {
+	border-collapse: collapse;
+}
+td {
+	border: 1px solid black;
+}
+th {
+	border: 1px solid black;
+	padding: 20px 5px;
+}
+h2 + a>img:hover {
+	border:none;
+}
+.goods p:first-letter {
+	font-family: Verdana;
+	font-size: 26px;
 }
