@@ -3,7 +3,7 @@ body, nav ul {
 	padding: 0;
 }
 body, .catalog {
-	background: #f8f8f8;
+	background: url("../img/logo/bg.png");
 }
 nav + div, .goods {
 	width: 1000px;
@@ -58,8 +58,11 @@ footer {
 	margin-top: 20px;
 	padding: 10px;
 }
+footer::after {
+	content: " 2016г.";
+}
 footer, header {
-	background: #4169e1;
+	background: url("../img/logo/fon.gif");
 }
 .goods, header, fieldset, input {
 	border-radius: 20px;
@@ -82,12 +85,13 @@ footer, header {
 	margin-left: 60px;
 }
 header {
-	padding: 15px;
+	padding-top: 10px;
 	margin-top: 5px;
 	margin-bottom: 50px;
+	height: 200px;
 }
-header> h1, footer {
-	color: yellow;
+header> h1 {
+	color: red;
 }
 .additional + p {
 	color: #707070;
@@ -111,7 +115,7 @@ h3 + ul li {
 	list-style-image: url(../img/bullet_yellow.png);
 }
 h2 + a>img{
-	border:  2px solid #4169e1;
+	outline:  2px solid #4169e1;
 }
 .catalog {
 	font-family: "Arial";
@@ -168,7 +172,7 @@ th {
 	padding: 20px 5px;
 }
 h2 + a>img:hover {
-	border:none;
+	outline:none;
 }
 .goods p:first-letter {
 	font-family: Verdana;
@@ -178,7 +182,7 @@ nav li:hover a {
 	color: red;
 }
 header>h1::before {
-	content: url(../img/logo/logo1.png);
+	content: url(../img/logo/logo.png);
 	margin-right: 1180px;
 }
 input[type="email"]:focus {
